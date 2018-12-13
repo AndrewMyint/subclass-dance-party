@@ -21,7 +21,31 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  border:40px solid blueviolet;
+  border-radius:40px;
+  position:absolute;
+}
+.circle{
+  border:40px solid blueviolet;
+  border-radius:40px;
+  position:absolute;
+}
+.square{
+  border:40px solid green;
   border-radius:10px;
   position:absolute;
+}
+.danceFloor {
+  overflow: hidden;
+}
+section {
+  margin: -1%;
+  padding: 20px;
+}
+section div {
+  background: #000;
+  float: left;
+  height: 24vw;
+  margin: 1%;
+  width: 23%;
 }
