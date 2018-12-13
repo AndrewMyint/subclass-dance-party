@@ -18,11 +18,10 @@ $(document).ready(function() {
    // window ={makeBlinkydancer:fn, makeDancer:fn}
    //console.log(window);
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
-    // get the maker function for the kind of dancer we're supposed to make
+
+    // get the maker   for the kind of dancer we're supposed to make
 
     var dancerMakerFunction = window[dancerMakerFunctionName];
-    //console.log(dancerMakerFunction);
-
 
     // make a dancer with a random position
 
