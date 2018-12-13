@@ -25,9 +25,26 @@ body, a:link, a:visited, a:active{
   border-radius:40px;
   position:absolute;
 }
-.circle{
-  border:40px solid blueviolet;
-  border-radius:40px;
+.bigCircle{
+  border:60px solid blueviolet;
+  border-radius:60px;
+  position:absolute;
+}
+.smallCircle{
+  border:30px solid blueviolet;
+  border-radius:30px;
+  position:absolute;
+}
+
+.changeColor {
+  border:30px solid red;
+  border-radius:30px;
+  position:absolute;
+}
+.rotated {
+  transform: rotate(15deg);
+  border:40px solid green;
+  border-radius:10px;
   position:absolute;
 }
 .square{
