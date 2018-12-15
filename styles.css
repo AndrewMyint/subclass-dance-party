@@ -3,7 +3,7 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-color:black;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -21,31 +21,40 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:40px solid blueviolet;
-  border-radius:40px;
+  border:70px solid red;
+  border-radius:70px;
   position:absolute;
+
 }
 .bigCircle{
-  border:60px solid blueviolet;
-  border-radius:60px;
+  border:70px solid blueviolet;
+  border-radius:100%;
   position:absolute;
+  transition: 1s;
+  transition-timing-function:ease;
 }
 .smallCircle{
-  border:30px solid blueviolet;
-  border-radius:30px;
+  border:50px solid blueviolet;
+  border-radius:50px;
   position:absolute;
 }
 
 .changeColor {
-  border:30px solid red;
-  border-radius:30px;
+  border:70px solid red;
+  border-radius:70px;
   position:absolute;
 }
 .rotated {
-  transform: rotate(15deg);
-  border:40px solid green;
-  border-radius:10px;
+  background-image: url(http://farm7.staticflickr.com/6115/6319704650_0a2bd0dcef_o.jpg);
+  width:150px;
+  height:150px;
+  border-radius:50%;
   position:absolute;
+  background-repeat:no-repeat;
+  background-position:50% 50%;
+  animation: spin 6s linear 0s infinite normal;
+
+
 }
 .square{
   border:40px solid green;
@@ -60,9 +69,21 @@ section {
   padding: 20px;
 }
 section div {
-  background: #000;
+  background:white;
   float: left;
   height: 24vw;
   margin: 1%;
   width: 23%;
 }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+

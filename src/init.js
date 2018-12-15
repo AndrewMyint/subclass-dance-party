@@ -39,7 +39,7 @@ $(document).ready(function() {
       var divId = 'div' + count;
       var divPos = $('#'+divId).position();
       //console.log(dancerMakerFunction);
-      var dancer = new dancerMakerFunction(divPos.top + 60,divPos.left + 60,Math.random() * 1000);
+      var dancer = new dancerMakerFunction(divPos.top + 50,divPos.left + 50,Math.random() * 1000);
       window.dancers.push({div:divId,item:dancer});
 
       $('body').append(dancer.$node)
