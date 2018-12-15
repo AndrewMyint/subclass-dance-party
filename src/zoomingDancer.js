@@ -18,5 +18,4 @@ zoomingDancer.prototype.step = function() {
 
   this.$node.css(this._big? smallSize:bigSize);
   this._big=!this._big;
-
 };
