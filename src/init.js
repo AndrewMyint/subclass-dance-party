@@ -40,9 +40,10 @@ $(document).ready(function() {
       var divPos = $('#'+divId).position();
       //console.log(dancerMakerFunction);
       var dancer = new dancerMakerFunction(divPos.top + 50,divPos.left + 50,Math.random() * 1000);
+      var dancer = new dancerMakerFunction('22%' ,'25%' ,Math.random() * 1000);
       window.dancers.push({div:divId,item:dancer});
 
-      $('body').append(dancer.$node)
+      $('#div' + count).append(dancer.$node)
     }
 
     //$('body').append(dancer.$node);

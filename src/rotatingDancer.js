@@ -10,4 +10,5 @@ rotatingDancer.prototype = Object.create(makeDancer.prototype);
 rotatingDancer.prototype.constructor = rotatingDancer;
 rotatingDancer.prototype.step = function () {
   makeDancer.prototype.step.call(this);
+
 }

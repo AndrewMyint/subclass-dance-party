@@ -2,7 +2,7 @@ var changingColorDancer = function (top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
   this._color = false;
   //this.degree=15;
-  //this.$node[0].className ='rotated';
+  this.$node[0].className ='changeColor';
 }
 
 changingColorDancer.prototype = Object.create(makeDancer.prototype);

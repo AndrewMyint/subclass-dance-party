@@ -14,6 +14,7 @@ zoomingDancer.prototype.step = function() {
   };
   var smallSize = {
     border:'10px solid blueviolet'
+
   };
 
   this.$node.css(this._big? smallSize:bigSize);
