@@ -10,10 +10,10 @@ zoomingDancer.prototype.step = function() {
   makeDancer.prototype.step.call(this);
 
   var bigSize = {
-    border:'70px solid blueviolet'
+    border:'70px solid fuchsia'
   };
   var smallSize = {
-    border:'10px solid blueviolet'
+    border:'10px solid fuchsia'
 
   };
 

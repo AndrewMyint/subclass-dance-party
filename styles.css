@@ -13,6 +13,10 @@ body, a:link, a:visited, a:active{
   padding:5px 12px;
   float:right;
 }
+button{
+  padding:5px 12px;
+  float:left;
+}
 .topbar{
   height:32px;
   background-color: #555;
@@ -21,6 +25,18 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
+.dancerPosition{
+  float: left;
+  margin: 20px;
+  /* min-width: 300px; */
+ /* position: relative;*/
+  /* width: 57%;
+  height: 57%;
+  bottom: 20%; */
+  /* background-color: red; */
+
+}
+
 .dancer{
   border:70px solid red;
   position:absolute;
@@ -33,14 +49,14 @@ body, a:link, a:visited, a:active{
 }
 .bigCircle{
   /* border:70px solid blueviolet; */
-  background-color: blueviolet;
+  background-color: fuchsia;
   border-radius:100%;
   position:absolute;
   transition: 1s;
   transition-timing-function:ease;
 }
 .smallCircle{
-  border:50px solid blueviolet;
+  border:50px solid fuchsia;
   border-radius:50px;
   position:absolute;
 }
@@ -61,6 +77,17 @@ body, a:link, a:visited, a:active{
   background-position:50% 50%;
   animation: spin 6s linear 0s infinite normal;
 }
+/* .rotated:hover {
+  background-image: url(http://farm7.staticflickr.com/6115/6319704650_0a2bd0dcef_o.jpg);
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  position:absolute;
+  background-repeat:no-repeat;
+  background-position:50% 50%;
+  animation: spin 6s linear 0s infinite normal;
+  animation-direction: reverse;
+} */
 .square{
   border:40px solid green;
   border-radius:10px;
@@ -103,6 +130,5 @@ section div {
     transform: rotate(360deg);
   }
 }
-
 
 

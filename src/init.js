@@ -1,6 +1,8 @@
 $(document).ready(function() {
   window.dancers = [];
   window.maxCount = 16;
+  window.maxRow=4;
+
   for(var i =1; i<= window.maxCount; i++){
     $('#s').append($('<div/>', { id: 'div' + i}))
   }
@@ -36,17 +38,47 @@ $(document).ready(function() {
     ); */
     if (count < window.maxCount){
       count++;
-      var divId = 'div' + count;
+      //var column = getRandomInt(4)+1;
+      //var column=1;
+      //var divNumber = (row-1)* 4 + column;
+      var boxNumber = count;
+      var divId = 'div' + boxNumber;
       var divPos = $('#'+divId).position();
       //console.log(dancerMakerFunction);
-      var dancer = new dancerMakerFunction(divPos.top + 50,divPos.left + 50,Math.random() * 1000);
-      var dancer = new dancerMakerFunction('22%' ,'25%' ,Math.random() * 1000);
-      window.dancers.push({div:divId,item:dancer});
+      var dancer = new dancerMakerFunction(divPos.top + 70,divPos.left + 70,Math.random() * 1000);
+      //var dancer = new dancerMakerFunction('22%' ,'25%' ,Math.random() * 1000);
+      window.dancers.push({box:boxNumber,item:dancer});
 
-      $('#div' + count).append(dancer.$node)
+      //$('#div' + divNumber).append(dancer.$node)
     }
 
-    //$('body').append(dancer.$node);
+    $('#s').append(dancer.$node);
+  });
+
+  $('#btnLineUp').on('click', function(event){
+    if ($(this).text() === 'Line Up'){
+      $(this).text("Go back");
+      for (let i = 0; i < window.dancers.length; i++){
+        let rowNumber = Math.ceil(window.dancers[i].box / 4);
+        let boxNumber = (rowNumber-1)* 4 + rowNumber;
+        let divId = 'div' + boxNumber;
+        let divPos = $('#'+divId).position();
+        console.log('rowNumber' +rowNumber, 'divNumber' + boxNumber);
+        window.dancers[i].item.setPosition(divPos.top + 70, divPos.left + 70);
+      }
+    }
+    else {
+      $(this).text("Line Up");
+      for (let i = 0; i < window.dancers.length; i++){
+        let divId = 'div' + window.dancers[i].box;
+        let divPos = $("#"+divId).position();
+        window.dancers[i].item.setPosition(divPos.top + 70, divPos.left + 70);
+      }
+    }
   });
 });
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
 
