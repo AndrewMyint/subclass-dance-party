@@ -76,6 +76,9 @@ $(document).ready(function() {
       }
     }
   });
+  $('#btnInteract').on('click'), function(event){
+
+  }
 });
 
 function getRandomInt(max) {
