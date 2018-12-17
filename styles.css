@@ -94,7 +94,7 @@ button{
   transition: linear 300ms;
   animation: spin 6s linear 0s infinite normal;
 }
-/* .rotated:hover {
+.rotateDiv:hover {
   background-image: url(http://farm7.staticflickr.com/6115/6319704650_0a2bd0dcef_o.jpg);
   width:150px;
   height:150px;
@@ -102,9 +102,9 @@ button{
   position:absolute;
   background-repeat:no-repeat;
   background-position:50% 50%;
-  animation: spin 6s linear 0s infinite normal;
+  animation: spin 2s linear 0s infinite normal;
   animation-direction: reverse;
-} */
+}
 .square{
   border:40px solid green;
   border-radius:10px;
