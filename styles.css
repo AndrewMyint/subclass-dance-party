@@ -40,7 +40,7 @@ button{
 }
 .danceFloor {
   background-repeat: no-repeat;
-  background-size: 100%;
+
   background-attachment: fixed;
   background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/d2574b75-bdb1-4794-bf7b-c45f61042ec4/d5icnar-1f109d09-663f-479b-8108-221dd7051583.png)
 
@@ -50,6 +50,7 @@ button{
   border:70px solid red;
   position:absolute;
   border-radius:100%;
+
   /* width: 57%;
   height: 57%;
   bottom: 20%; */
@@ -66,6 +67,7 @@ button{
 }
 .smallCircle{
   border:50px solid fuchsia;
+
   border-radius:50px;
   position:absolute;
 }
@@ -76,14 +78,20 @@ button{
   position:absolute;
   transition: linear 300ms;
 }
-.rotated {
+.rotated{
+  position: relative;
+
+  transition: linear 300ms;
+}
+.rotateDiv{
   background-image: url(http://farm7.staticflickr.com/6115/6319704650_0a2bd0dcef_o.jpg);
   width:150px;
   height:150px;
   border-radius:50%;
-  position:absolute;
   background-repeat:no-repeat;
   background-position:50% 50%;
+  position:absolute;
+  transition: linear 300ms;
   animation: spin 6s linear 0s infinite normal;
 }
 /* .rotated:hover {
@@ -114,24 +122,13 @@ section {
 
 }
 section div {
-  /* background:white; */
   float: left;
   height: 250px;
   margin: 20px;
-  /* min-width: 300px; */
   width: 300px;
   position: relative;
 }
-/* section div {
-  background:white;
-  float: left;
-  height: 250px;
-  min-height: 20%;
-  margin: 20px;
-  min-width: 250px;
-  width: 250px;
-  position: relative;
-} */
+
 
 @keyframes spin {
   0% {
